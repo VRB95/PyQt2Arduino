@@ -18,8 +18,12 @@
 - [Prerequisites](#prerequisites)
 - [Setup/Installation:](#setupinstallation)
 - [Usage](#usage)
-    - [Send_Recive:](#sendrecive)
-    - [Display_Text](#displaytext)
+  - [Graphical User Interface](#graphical-user-interface)
+  - [Arduino2PyQt Examples](#arduino2pyqt-examples)
+      - [Send_Recive:](#sendrecive)
+      - [Display_Text](#displaytext)
+      - [Recive_Light_Intensity](#recivelightintensity)
+      - [Recive_Temperature](#recivetemperature)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -70,20 +74,68 @@ python3 PyQt2Arduino.py
 In this part, I'll show you how to work with this application and with every example from Arduino2PyQt folder.
 1. Send_Recive;
 2. Display_Text;
-3. Recive_Light Intensity;
+3. Recive_Light_Intensity;
 4. Recive_Temperature;
 5. All_In_One;
    
-#### Send_Recive:
-1. Upload this *.ini, then open PyQt2Arduino, runing python3 PyQt2Arduino.py in main folder.
-2. Now, from Connect tab select PORT, BUADRATE, DATABITS, STOPBITS and PARITY, or you can check the Default Settings checbox annd will setup the default settings for this example.
-3. The default setting are:
-   1. Baudrate: 9600, Databits: 8, StopBits: 1, Parity: NoParity, only port need to be selected.
-4. Go in Console tab and in "Send widget" write any text you want to send to Arduino, and Arduino will dispaly it, and send back to PyQt2Arduino, who will print it on "Read widget".
+### Graphical User Interface
+The GUI consists of 5 tabs, 2 main tabs and 3 custom tabs.
+Every tab consists of other widgets.
+1. Connect tab:
+   * From here you can select all the settings for serial communication, select the default settings and connect/disconnect from Arduino.
+   The default setting are: Baudrate: 9600, Databits: 8, StopBits: 1, Parity: NoParity, only port need to be selected.
+
+<p align="center">
+  <img src="img\screen_1.png" alt="screenshot_1">
+</p>  
+
+2. Console tab:
+   * This is "Serial Monitor", from here you can send data (text) to Arduino from "Send widget" and display in "Read widget" what Arduino send back to you.
+   * Also, any data sended or recived will be saved in logfile.
+
+<p align="center">
+  <img src="img\screen_2.png" alt="screenshot_1">
+</p> 
+
+### Arduino2PyQt Examples
+
+##### Send_Recive:
+1. Upload this *.ini
+2. Open PyQt2Arduino and check Default Settings
+3. Go to Display tab
+4. Click on Connect button
+5. Go in Console tab and in "Send widget" write any text you want to send to Arduino, and Arduino will dispaly it, and send back to PyQt2Arduino, who will print it on "Read widget".
   
-#### Display_Text
+##### Display_Text
+1. Upload this *.ini
+2. Open PyQt2Arduino and check Default Settings
+3. Go to Display tab
+4. Click on Connect button
+5. Type whatever you want to be displayed on 16x2 lcd and click Send
 
+<p align="center">
+  <img src="img\screen_3.png" alt="screenshot_1">
+</p> 
+   
+##### Recive_Light_Intensity
+1. Upload this *.ini
+2. Open PyQt2Arduino and check Default Settings
+3. Go to Light S. tab
+4. Click on Start Reading button
+   
+<p align="center">
+  <img src="img\screen_4.png" alt="screenshot_1">
+</p> 
+  
+##### Recive_Temperature
+1. Upload this *.ini
+2. Open PyQt2Arduino and check Default Settings
+3. Go to Temperature. tab
+4. Click on Start Reading button
 
+<p align="center">
+  <img src="img\screen_5.png" alt="screenshot_1">
+</p> 
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -110,7 +162,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Vesa Bogdan - vesabogdan95@gmail.com
 
-Project Link: [https://github.com/vesa95/SimpleSync](https://github.com/vesa95/SimpleSync)
+Project Link: [https://github.com/vesa95/PyQt2Arduino](https://github.com/vesa95/PyQt2Arduino)
 
 
 
