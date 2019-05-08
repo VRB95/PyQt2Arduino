@@ -1,1 +1,126 @@
-# PyQt2Arduino
+<!-- PROJECT LOGO -->
+<p align="center">
+  <img src="img\logo.png" alt="Logo">
+</p>
+
+  <h3 align="center">PyQt2Arduino</h3>
+
+
+
+
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+
+- [Table of Contents](#table-of-contents)
+- [About The Project:](#about-the-project)
+  - [Built With:](#built-with)
+- [Prerequisites](#prerequisites)
+- [Setup/Installation:](#setupinstallation)
+- [Usage](#usage)
+    - [Send_Recive:](#sendrecive)
+    - [Display_Text](#displaytext)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project:
+
+<p align="center">
+  <img src="img\screensh_1.png" alt="screenshot_1">
+</p>
+
+PyQt2Arduino is mainly a terminal for serial comunication with Arduino, but it has a set of custom tabs for different functions, like displaying a text send from graphical user interface to an 16x2 lcd connected to Arduino, or displaying the temperature or ligh intensity recived from external sesnors. The application is writen in python and pyqt5 (gui part and also for serial communication it use QSerialPort) and can be easly modified for adapting it to a large variety of sensors, extra tab can be add in GUI and other functions can be create.
+
+### Built With:
+* [PyQt5](https://www.riverbankcomputing.com/software/pyqt/intro/index.html)
+* [Python](https://www.python.org)
+
+## Prerequisites
+
+I'll asume you already have installed python 3.x, now install [PyQt5](https://rsync.samba.org) packages:
+
+* via pip
+```sh
+pip3 install PyQt5
+```
+* via apt-get (Ubuntu)
+```sh
+sudo apt-get install qtcreator pyqt5-dev-tools
+```
+
+## Setup/Installation:
+
+1. Clone the repo:
+```sh
+git clone https://github.com/Vesa95/PyQt2Arduino.git
+```
+2. Upload to Arduino any example you want from Arduino2PyQt folder, but for the first steps with this application I highly recommand to upload "Send_Recive.ini" example first. With this code you send data (text) from PyQt2Arduino graphical user interface to Arduino, and Arduino will print on console (monitor) what it recived.
+3. After you uploaded any example on Arduino, run PyQt2Arduino.py:
+```sh
+python3 PyQt2Arduino.py
+```
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+In this part, I'll show you how to work with this application and with every example from Arduino2PyQt folder.
+1. Send_Recive;
+2. Display_Text;
+3. Recive_Light Intensity;
+4. Recive_Temperature;
+5. All_In_One;
+   
+#### Send_Recive:
+1. Upload this *.ini, then open PyQt2Arduino, runing python3 PyQt2Arduino.py in main folder.
+2. Now, from Connect tab select PORT, BUADRATE, DATABITS, STOPBITS and PARITY, or you can check the Default Settings checbox annd will setup the default settings for this example.
+3. The default setting are:
+   1. Baudrate: 9600, Databits: 8, StopBits: 1, Parity: NoParity, only port need to be selected.
+4. Go in Console tab and in "Send widget" write any text you want to send to Arduino, and Arduino will dispaly it, and send back to PyQt2Arduino, who will print it on "Read widget".
+  
+#### Display_Text
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Vesa Bogdan - vesabogdan95@gmail.com
+
+Project Link: [https://github.com/vesa95/SimpleSync](https://github.com/vesa95/SimpleSync)
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
+[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[license-url]: https://choosealicense.com/licenses/mit
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/screenshot.png
