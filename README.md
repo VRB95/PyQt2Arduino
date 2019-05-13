@@ -20,13 +20,19 @@
 - [Usage](#usage)
   - [Graphical User Interface](#graphical-user-interface)
   - [Arduino2PyQt Examples](#arduino2pyqt-examples)
-      - [Send_Recive:](#sendrecive)
-    - [I. Display_Text](#i-displaytext)
+    - [I. Send_Recive:](#i-sendrecive)
+    - [II. Display_Text](#ii-displaytext)
       - [Parts List:](#parts-list)
       - [Circuit Diagram](#circuit-diagram)
       - [Application Usage](#application-usage)
-      - [Recive_Light_Intensity](#recivelightintensity)
-      - [Recive_Temperature](#recivetemperature)
+    - [III. Recive_Light_Intensity](#iii-recivelightintensity)
+      - [Parts List:](#parts-list-1)
+      - [Circuit Diagram](#circuit-diagram-1)
+      - [Application Usage](#application-usage-1)
+    - [IV. Recive_Temperature](#iv-recivetemperature)
+      - [Parts List:](#parts-list-2)
+      - [Circuit Diagram](#circuit-diagram-2)
+      - [Application Usage](#application-usage-2)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -98,20 +104,22 @@ Every tab consists of other widgets.
 
 ### Arduino2PyQt Examples
 
-##### Send_Recive:
+#### I. Send_Recive:
 1. Upload this *.ini
 2. Open PyQt2Arduino and check "Use Default Settings"
 3. Go in Console tab and in "Send widget" write any text you want to send to Arduino, click Send button, and Arduino will send back to PyQt2Arduino, who will print it on "Read widget".
   
-#### I. Display_Text
+#### II. Display_Text
 ##### Parts List:
 1. Arduino UNO
 2. LCM 1602 IIC
-3. LCD 1602   
+3. LCD 1602
+      
 ##### Circuit Diagram
 <p align="center">
   <img src="img\sch_display.png" alt="screenshot_1">
 </p> 
+
 ##### Application Usage
 1. Upload this *.ini
 2. Open PyQt2Arduino and check "Use Default Settings"
@@ -123,7 +131,18 @@ Every tab consists of other widgets.
   <img src="img\screen_3.png" alt="screenshot_1">
 </p> 
    
-##### Recive_Light_Intensity
+#### III. Recive_Light_Intensity
+##### Parts List:
+1. Arduino UNO
+2. LCM 1602 IIC
+3. LCD 1602
+      
+##### Circuit Diagram
+<p align="center">
+  <img src="img\sch_display.png" alt="screenshot_1">
+</p> 
+
+##### Application Usage
 1. Upload this *.ini
 2. Open PyQt2Arduino and check "Use Default Settings"
 3. Go to Light S. tab
@@ -133,7 +152,17 @@ Every tab consists of other widgets.
   <img src="img\screen_4.png" alt="screenshot_1">
 </p> 
   
-##### Recive_Temperature
+#### IV. Recive_Temperature
+##### Parts List:
+1. Arduino UNO
+2. DTH11
+      
+##### Circuit Diagram
+<p align="center">
+  <img src="img\sch_temp.png" alt="screenshot_1">
+</p> 
+
+##### Application Usage
 1. Upload this *.ini
 2. Open PyQt2Arduino and check "Use Default Settings"
 3. Go to Temperature. tab
