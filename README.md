@@ -117,7 +117,7 @@ Every tab consists of other widgets.
       
 ##### Circuit Diagram
 <p align="center">
-  <img src="img\sch_display.png" alt="screenshot_1" width="780" height="432">
+  <img src="img\sch_display.png" alt="screenshot_1" width="585" height="324">
 </p> 
 
 ##### Application Usage
