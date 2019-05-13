@@ -134,12 +134,12 @@ Every tab consists of other widgets.
 #### III. Recive_Light_Intensity
 ##### Parts List:
 1. Arduino UNO
-2. LCM 1602 IIC
-3. LCD 1602
+2. TSL2561
+
       
 ##### Circuit Diagram
 <p align="center">
-  <img src="img\sch_display.png" alt="screenshot_1">
+  <img src="img\sch_light.png" alt="screenshot_1">
 </p> 
 
 ##### Application Usage
