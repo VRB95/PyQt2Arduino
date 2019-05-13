@@ -33,6 +33,10 @@
       - [Parts List:](#parts-list-2)
       - [Circuit Diagram](#circuit-diagram-2)
       - [Application Usage](#application-usage-2)
+    - [V. All_In_One](#v-allinone)
+      - [Parts List:](#parts-list-3)
+      - [Circuit Diagram](#circuit-diagram-3)
+      - [Application Usage](#application-usage-3)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -105,7 +109,7 @@ Every tab consists of other widgets.
 ### Arduino2PyQt Examples
 
 #### I. Send_Recive:
-1. Upload this *.ini
+1. Upload Send_Recive.ini
 2. Open PyQt2Arduino and check "Use Default Settings"
 3. Go in Console tab and in "Send widget" write any text you want to send to Arduino, click Send button, and Arduino will send back to PyQt2Arduino, who will print it on "Read widget".
   
@@ -113,7 +117,7 @@ Every tab consists of other widgets.
 ##### Parts List:
 1. Arduino UNO
 2. LCM 1602 IIC
-3. LCD 1602
+3. LCD 16x2
       
 ##### Circuit Diagram
 <p align="center">
@@ -121,7 +125,7 @@ Every tab consists of other widgets.
 </p> 
 
 ##### Application Usage
-1. Upload this *.ini
+1. Upload Display_Text.ini
 2. Open PyQt2Arduino and check "Use Default Settings"
 3. Go to Display tab
 4. Click on Connect button
@@ -143,7 +147,7 @@ Every tab consists of other widgets.
 </p> 
 
 ##### Application Usage
-1. Upload this *.ini
+1. Upload Recive_Light_Intensity.ini
 2. Open PyQt2Arduino and check "Use Default Settings"
 3. Go to Light S. tab
 4. Click on Start Reading button
@@ -163,7 +167,7 @@ Every tab consists of other widgets.
 </p> 
 
 ##### Application Usage
-1. Upload this *.ini
+1. Upload Recive_Temperature.ini
 2. Open PyQt2Arduino and check "Use Default Settings"
 3. Go to Temperature. tab
 4. Click on Start Reading button
@@ -171,6 +175,24 @@ Every tab consists of other widgets.
 <p align="center">
   <img src="img\screen_5.png" alt="screenshot_1">
 </p> 
+
+#### V. All_In_One
+##### Parts List:
+1. Arduino UNO
+2. LCM 1602 IIC
+3. LCD 16x2
+3. TSL2561
+4. DTH11
+      
+##### Circuit Diagram
+<p align="center">
+  <img src="img\sch_all.png" alt="screenshot_1" width="865" height="678">
+</p> 
+
+##### Application Usage
+1. Upload All_In_One.ini
+2. Open PyQt2Arduino and check "Use Default Settings"
+3. Enjoy!
 
 <!-- CONTRIBUTING -->
 ## Contributing
