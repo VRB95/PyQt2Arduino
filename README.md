@@ -21,7 +21,10 @@
   - [Graphical User Interface](#graphical-user-interface)
   - [Arduino2PyQt Examples](#arduino2pyqt-examples)
       - [Send_Recive:](#sendrecive)
-      - [Display_Text](#displaytext)
+    - [I. Display_Text](#i-displaytext)
+      - [Parts List:](#parts-list)
+      - [Circuit Diagram](#circuit-diagram)
+      - [Application Usage](#application-usage)
       - [Recive_Light_Intensity](#recivelightintensity)
       - [Recive_Temperature](#recivetemperature)
 - [Contributing](#contributing)
@@ -100,7 +103,16 @@ Every tab consists of other widgets.
 2. Open PyQt2Arduino and check "Use Default Settings"
 3. Go in Console tab and in "Send widget" write any text you want to send to Arduino, click Send button, and Arduino will send back to PyQt2Arduino, who will print it on "Read widget".
   
-##### Display_Text
+#### I. Display_Text
+##### Parts List:
+1. Arduino UNO
+2. LCM 1602 IIC
+3. LCD 1602   
+##### Circuit Diagram
+<p align="center">
+  <img src="img\sch_display.png" alt="screenshot_1">
+</p> 
+##### Application Usage
 1. Upload this *.ini
 2. Open PyQt2Arduino and check "Use Default Settings"
 3. Go to Display tab
