@@ -128,7 +128,7 @@ Every tab consists of other widgets.
 5. Type whatever you want to be displayed on 16x2 lcd and click Send
 
 <p align="center">
-  <img src="img\screen_3.png" alt="screenshot_1">
+  <img src="img\screen_3.png" alt="screenshot_1"width="345" height="338" >
 </p> 
    
 #### III. Recive_Light_Intensity
@@ -159,7 +159,7 @@ Every tab consists of other widgets.
       
 ##### Circuit Diagram
 <p align="center">
-  <img src="img\sch_temp.png" alt="screenshot_1">
+  <img src="img\sch_temp.png" alt="screenshot_1" width="487" height="261">
 </p> 
 
 ##### Application Usage
