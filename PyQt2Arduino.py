@@ -46,6 +46,11 @@ class Widget(QtWidgets.QMainWindow):
         self.light_StopBtn.clicked.connect(lambda: self.mode_con_discon("close"))
         # --------------------- #
 
+        # --> Temp  command <-- #
+        self.temp_StartBtn.clicked.connect(lambda: self.mode_con_discon("temp"))
+        self.temp_StopBtn.clicked.connect(lambda: self.mode_con_discon("close"))
+        # --------------------- #
+
         # --> List all ports <-- #
         for info in QtSerialPort.QSerialPortInfo.availablePorts():
             self.ports_comboBox.addItem(info.portName())
@@ -113,7 +118,10 @@ class Widget(QtWidgets.QMainWindow):
         while self.serial.canReadLine():
             text = self.serial.readLine().data().decode()
             text = text.rstrip('\r\n')
-            self.lux_label.setText(text)
+            if text.startswith('Lux'):
+                self.lux_label.setText(text)
+            elif text.startswith('T:'):
+                self.temp_label.setText(text)
             self.writeOnConsoleAndLog(text)
 
     @QtCore.pyqtSlot()

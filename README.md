@@ -107,6 +107,11 @@ Every tab consists of other widgets.
 </p> 
 
 ### Arduino2PyQt Examples
+For almost every Arduino2PyQt example you need a specific library, I have already downloaded the libraries and put them in folders of the examples, or you cand download them from original source:
+
+* [LiquidCrystal-I2C](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
+* [DTH11](https://github.com/adidax/dht11)
+* [TSL2561](https://github.com/adafruit/TSL2561-Arduino-Library)
 
 #### I. Send_Recive:
 1. Upload Send_Recive.ini
@@ -125,11 +130,12 @@ Every tab consists of other widgets.
 </p> 
 
 ##### Application Usage
-1. Upload Display_Text.ini
-2. Open PyQt2Arduino and check "Use Default Settings"
-3. Go to Display tab
-4. Click on Connect button
-5. Type whatever you want to be displayed on 16x2 lcd and click Send
+1. Install the library
+2. Upload Display_Text.ini
+3. Open PyQt2Arduino and check "Use Default Settings"
+4. Go to Display tab
+5. Click on Connect button
+6. Type whatever you want to be displayed on 16x2 lcd and click Send
 
 <p align="center">
   <img src="img\screen_3.png" alt="screenshot_1">
@@ -147,10 +153,11 @@ Every tab consists of other widgets.
 </p> 
 
 ##### Application Usage
-1. Upload Recive_Light_Intensity.ini
-2. Open PyQt2Arduino and check "Use Default Settings"
-3. Go to Light S. tab
-4. Click on Start Reading button
+1. Install the library
+2. Upload Recive_Light_Intensity.ini
+3. Open PyQt2Arduino and check "Use Default Settings"
+4. Go to Light S. tab
+5. Click on Start Reading button
    
 <p align="center">
   <img src="img\screen_4.png" alt="screenshot_1">
@@ -167,10 +174,11 @@ Every tab consists of other widgets.
 </p> 
 
 ##### Application Usage
-1. Upload Recive_Temperature.ini
-2. Open PyQt2Arduino and check "Use Default Settings"
-3. Go to Temperature. tab
-4. Click on Start Reading button
+1. Install the library
+2. Upload Recive_Temperature.ini
+3. Open PyQt2Arduino and check "Use Default Settings"
+4. Go to Temperature. tab
+5. Click on Start Reading button
 
 <p align="center">
   <img src="img\screen_5.png" alt="screenshot_1">
@@ -190,9 +198,10 @@ Every tab consists of other widgets.
 </p> 
 
 ##### Application Usage
-1. Upload All_In_One.ini
-2. Open PyQt2Arduino and check "Use Default Settings"
-3. Enjoy!
+1. Install all the libraries
+2. Upload All_In_One.ini
+3. Open PyQt2Arduino and check "Use Default Settings"
+4. Enjoy!
 
 <!-- CONTRIBUTING -->
 ## Contributing
