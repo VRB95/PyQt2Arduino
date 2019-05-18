@@ -47,8 +47,13 @@ class Widget(QtWidgets.QMainWindow):
         # --------------------- #
 
         # --> Temp  command <-- #
-        self.temp_StartBtn.clicked.connect(lambda: self.mode_con_discon("temp"))
+        self.temp_StartBtn.clicked.connect(lambda: self.mode_con_discon("temp"))HC-SR04
         self.temp_StopBtn.clicked.connect(lambda: self.mode_con_discon("close"))
+        # --------------------- #
+
+        # --> Temp  command <-- #
+        self.start_sonar.clicked.connect(lambda: self.mode_con_discon("distance"))
+        self.stop_sonar.clicked.connect(lambda: self.mode_con_discon("close"))
         # --------------------- #
 
         # --> List all ports <-- #
@@ -118,11 +123,18 @@ class Widget(QtWidgets.QMainWindow):
         while self.serial.canReadLine():
             text = self.serial.readLine().data().decode()
             text = text.rstrip('\r\n')
+
             if text.startswith('Lux'):
                 self.lux_label.setText(text)
             elif text.startswith('T:'):
                 self.temp_label.setText(text)
-            self.writeOnConsoleAndLog(text)
+            elif text.startswith('Distance:'):
+                text = text.replace("Distance: ", "")
+                text = int(text)
+                self.ultrasonicSlider.setValue(text)
+                self.ultrasonic_label.setText(str(text) + " cm")
+
+            self.writeOnConsoleAndLog(str(text))
 
     @QtCore.pyqtSlot()
     def send(self):
