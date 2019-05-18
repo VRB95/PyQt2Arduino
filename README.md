@@ -193,11 +193,11 @@ For almost every Arduino2PyQt example you need a specific library, I have alread
 #### V. Sonar
 ##### Parts List:
 1. Arduino UNO
-2. HC-SRC04
+2. HC-SR04
       
 ##### Circuit Diagram
 <p align="center">
-  <img src="img\sch_sonar.png" alt="screenshot_1" width="487" height="261">
+  <img src="img\sch_sonar.png" alt="screenshot_1">
 </p> 
 
 ##### Application Usage
@@ -218,6 +218,7 @@ For almost every Arduino2PyQt example you need a specific library, I have alread
 3. LCD 16x2
 3. TSL2561
 4. DTH11
+5. HC-SR04
       
 ##### Circuit Diagram
 <p align="center">
