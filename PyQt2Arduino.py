@@ -47,7 +47,7 @@ class Widget(QtWidgets.QMainWindow):
         # --------------------- #
 
         # --> Temp  command <-- #
-        self.temp_StartBtn.clicked.connect(lambda: self.mode_con_discon("temp"))HC-SR04
+        self.temp_StartBtn.clicked.connect(lambda: self.mode_con_discon("temp"))
         self.temp_StopBtn.clicked.connect(lambda: self.mode_con_discon("close"))
         # --------------------- #
 
