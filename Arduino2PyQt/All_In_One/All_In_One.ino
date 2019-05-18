@@ -3,6 +3,13 @@
 #include <dht.h>
 #include "TSL2561.h"
 #define DHT11_PIN 8
+#include<NewPing.h>
+#define trig A0
+#define echo A1
+#define maximum 200
+int usec;
+int cm;
+NewPing sonar(trig, echo, maximum);
 
 // connect SCL to analog 5
 // connect SDA to analog 4
@@ -13,6 +20,7 @@ TSL2561 tsl(TSL2561_ADDR_FLOAT);
 bool isLcdActivated = false;
 bool isLightActivated = false;
 bool isTempActivated = false;
+bool isSonarActivated = false;
 String words;
 dht DHT;
 LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 for a 16 chars and 2 line display
@@ -51,6 +59,7 @@ void loop()
         isLcdActivated = true;
         isLightActivated = false;
         isTempActivated = false;
+        isSonarActivated = false;
         lcd.clear();    
     }
     
@@ -69,6 +78,7 @@ void loop()
         isLcdActivated = false;
         isLightActivated = true;  
         isTempActivated = false;
+        isSonarActivated = false;
     } 
 
     if (isLightActivated == true){
@@ -84,6 +94,7 @@ void loop()
         isLcdActivated = false;
         isLightActivated = false;  
         isTempActivated = true;
+        isSonarActivated = false;
     } 
 
     if (isTempActivated == true){
@@ -97,11 +108,29 @@ void loop()
         delay(2500);
     }
 
+    if (words.startsWith("distance")){
+        isLcdActivated = false;
+        isLightActivated = false;  
+        isTempActivated = false;
+        isSonarActivated = true;
+    } 
+
+    if (isSonarActivated == true){
+        usec=sonar.ping();
+        cm=usec/58;
+        Serial.print("Distance: ");
+        Serial.print(cm);
+        Serial.print("\n");
+        
+        delay(200);
+    }
+
     
     if (words.startsWith("close")){
         isLcdActivated = false;
         isLightActivated = false;
         isTempActivated = false; 
+        isSonarActivated = false;
         lcd.clear();  
     } 
     

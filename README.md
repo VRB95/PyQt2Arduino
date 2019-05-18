@@ -33,10 +33,14 @@
       - [Parts List:](#parts-list-2)
       - [Circuit Diagram](#circuit-diagram-2)
       - [Application Usage](#application-usage-2)
-    - [V. All_In_One](#v-allinone)
+    - [V. Sonar](#v-sonar)
       - [Parts List:](#parts-list-3)
       - [Circuit Diagram](#circuit-diagram-3)
       - [Application Usage](#application-usage-3)
+    - [VI. All_In_One](#vi-allinone)
+      - [Parts List:](#parts-list-4)
+      - [Circuit Diagram](#circuit-diagram-4)
+      - [Application Usage](#application-usage-4)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -85,10 +89,11 @@ In this part, I'll show you how to work with this application and with every exa
 2. Display_Text;
 3. Recive_Light_Intensity;
 4. Recive_Temperature;
-5. All_In_One;
+5. Sonar;
+6. All_In_One;
    
 ### Graphical User Interface
-The GUI consists of 5 tabs: 2 main tabs and 3 custom tabs.
+The GUI consists of 5 tabs: 2 main tabs and 4 custom tabs.
 Every tab consists of other widgets.
 1. Connect tab:
    * From here you can select all the settings for serial communication, such as PORT, BAUDRATE, DATABITS, PARTIY, and STOPBITS.
@@ -112,6 +117,7 @@ For almost every Arduino2PyQt example you need a specific library, I have alread
 * [LiquidCrystal-I2C](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
 * [DTH11](https://github.com/adidax/dht11)
 * [TSL2561](https://github.com/adafruit/TSL2561-Arduino-Library)
+* [Sonar](https://bitbucket.org/teckel12/arduino-new-ping/downloads/)
 
 #### I. Send_Recive:
 1. Upload Send_Recive.ini
@@ -184,7 +190,28 @@ For almost every Arduino2PyQt example you need a specific library, I have alread
   <img src="img\screen_5.png" alt="screenshot_1">
 </p> 
 
-#### V. All_In_One
+#### V. Sonar
+##### Parts List:
+1. Arduino UNO
+2. HC-SRC04
+      
+##### Circuit Diagram
+<p align="center">
+  <img src="img\sch_sonar.png" alt="screenshot_1" width="487" height="261">
+</p> 
+
+##### Application Usage
+1. Install the library
+2. Upload Sonar.ini
+3. Open PyQt2Arduino and check "Use Default Settings"
+4. Go to Ultrasonic S. tab
+5. Click on Start Reading button
+
+<p align="center">
+  <img src="img\screen_6.png" alt="screenshot_1">
+</p> 
+
+#### VI. All_In_One
 ##### Parts List:
 1. Arduino UNO
 2. LCM 1602 IIC
