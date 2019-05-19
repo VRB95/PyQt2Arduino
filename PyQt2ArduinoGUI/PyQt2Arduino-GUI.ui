@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>697</width>
-    <height>622</height>
+    <height>664</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -901,7 +901,7 @@
             <property name="sizeHint" stdset="0">
              <size>
               <width>20</width>
-              <height>80</height>
+              <height>60</height>
              </size>
             </property>
            </spacer>
@@ -944,14 +944,17 @@
              <widget class="QLabel" name="ultrasonic_label">
               <property name="font">
                <font>
-                <pointsize>24</pointsize>
+                <family>Arial</family>
+                <pointsize>28</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
                </font>
               </property>
               <property name="frameShape">
                <enum>QFrame::NoFrame</enum>
               </property>
               <property name="text">
-               <string/>
+               <string>0 cm</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -992,7 +995,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap>../../../Repositories/PyQt2Arduino/img/ruller.png</pixmap>
+             <pixmap>../img/ruller.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
