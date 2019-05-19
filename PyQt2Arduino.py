@@ -196,6 +196,8 @@ class Widget(QtWidgets.QMainWindow):
 if __name__ == '__main__':
     import sys
     app = QtWidgets.QApplication(sys.argv)
+    # availableStyles = QtWidgets.QStyleFactory.keys()
+    # print(availableStyles)
     w = Widget()
     w.show()
     sys.exit(app.exec_())
