@@ -6,7 +6,7 @@
 <!-- NAME OF PROJECTS + BADGES -->
 ## PyQt2Arduino
 
-[![HitCount](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino.svg)](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino)
+[![HitCount](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino.svg)](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino) [![License: MIT](https://img.shields.io/github/license/VRB95/SimpleSync?color=blue&style=flat-square)](https://opensource.org/licenses/MIT)
 
 PyQt2Arduino is mainly a terminal for serial comunication with Arduino, but it has a set of custom tabs for different functions, like displaying a text send from graphical user interface to an 16x2 lcd connected to Arduino, or displaying the temperature or ligh intensity recived from external sesnors. The application is writen in python and pyqt5 (gui part and also for serial communication it use QSerialPort) and can be easly modified for adapting it to a large variety of sensors, extra tab can be add in GUI and other functions can be create.
 
