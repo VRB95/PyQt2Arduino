@@ -5,19 +5,15 @@
   
 <!-- NAME OF PROJECTS + BADGES -->
 ## PyQt2Arduino
-PyQt2Arduino is mainly a terminal for serial comunication with Arduino, but it has a set of custom tabs for different functions.
 
 [![HitCount](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino.svg)](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino)
 
-
+PyQt2Arduino is mainly a terminal for serial comunication with Arduino, but it has a set of custom tabs for different functions, like displaying a text send from graphical user interface to an 16x2 lcd connected to Arduino, or displaying the temperature or ligh intensity recived from external sesnors. The application is writen in python and pyqt5 (gui part and also for serial communication it use QSerialPort) and can be easly modified for adapting it to a large variety of sensors, extra tab can be add in GUI and other functions can be create.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-
-- [Table of Contents](#table-of-contents)
-- [About The Project:](#about-the-project)
-  - [Built With:](#built-with)
+- [Built With:](#built-with)
 - [Prerequisites](#prerequisites)
 - [Setup/Installation:](#setupinstallation)
 - [Usage](#usage)
@@ -49,13 +45,7 @@ PyQt2Arduino is mainly a terminal for serial comunication with Arduino, but it h
 - [Contact](#contact)
 
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project:
-
-PyQt2Arduino is mainly a terminal for serial comunication with Arduino, but it has a set of custom tabs for different functions, like displaying a text send from graphical user interface to an 16x2 lcd connected to Arduino, or displaying the temperature or ligh intensity recived from external sesnors. The application is writen in python and pyqt5 (gui part and also for serial communication it use QSerialPort) and can be easly modified for adapting it to a large variety of sensors, extra tab can be add in GUI and other functions can be create.
-
-### Built With:
+## Built With:
 * [PyQt5](https://www.riverbankcomputing.com/software/pyqt/intro/index.html)
 * [Python](https://www.python.org)
 
