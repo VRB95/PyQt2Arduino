@@ -5,7 +5,7 @@
 
   <h3 align="center">PyQt2Arduino</h3>
 
-<p align="center"> [![HitCount](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino.svg)](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino) </p>
+[![HitCount](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino.svg)](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino)
 
 
 
