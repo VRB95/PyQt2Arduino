@@ -2,8 +2,9 @@
 <p align="center">
   <img src="img\logo.png" alt="Logo">
 </p>
-
-  <h3 align="center">PyQt2Arduino</h3>
+  
+<!-- NAME OF PROJECTS + BADGES -->
+## PyQt2Arduino
 
 [![HitCount](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino.svg)](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino)
 
