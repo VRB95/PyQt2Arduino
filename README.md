@@ -5,7 +5,7 @@
   
 <!-- NAME OF PROJECTS + BADGES -->
 ## PyQt2Arduino
-
+PyQt2Arduino is mainly a terminal for serial comunication with Arduino, but it has a set of custom tabs for different functions.
 [![HitCount](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino.svg)](http://hits.dwyl.com/VRB95/VRB95/PyQt2Arduino)
 
 
